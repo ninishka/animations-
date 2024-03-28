@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.leaf-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leaf_img1, .leaf_img2, .leaf_img3 {
+  width: 180px;
+}
+
+.leaf1_conteiner {
+  background-color: violet ;
+  border-radius: 50%;
+  animation-name: moveDiagonal ;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+  animation-direction:alternate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  }
+
+  @keyframes moveDiagonal {
+    from {
+       transform: translateX(0) translateY(0);
+       background-color: violet ;
+       border-radius: 0%;
+    }
+    to {
+       transform: translateX(250px) translateY(250px);
+       background-color: violet;
+       border-radius: 50%;
+
+    }
+   }
+
+   .leaf2_conteiner {
+    background-color: violet ;
+    border-radius: 50%;
+    animation-name: MoveDown ;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    }
+
+    @keyframes MoveDown {
+      from {
+        transform: translateX(0) translateY(0);
+        background-color: violet ;
+        border-radius: 0%;
+     }
+     to {
+        transform: translateX(0px) translateY(250px);
+        background-color: violet;
+        border-radius: 50%;
+     }
+    }
+
+    .leaf3_conteiner {
+      background-color: violet ;
+      border-radius: 50%;
+      animation-name: moveDiagonalLeft ;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      animation-fill-mode: backwards;
+      animation-direction:alternate;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      }
+  
+
+      @keyframes  moveDiagonalLeft  {
+        from {
+          transform: translateX(0) translateY(0);
+          background-color: violet ;
+          border-radius: 0%;
+       }
+       to {
+          transform: translateX(-250px) translateY(250px);
+          background-color: violet;
+          border-radius: 50%;
+       }
+      }
+  
+
+
+
+
+
+/* .leaf1_conteiner, .leaf2_conteiner, .leaf3_conteiner {
+  background-color: violet ;
+  border-radius: 50%;
+  transition-property: all;
+  transition-duration: 4s;
+  transition-timing-function:linear;
+  transition-delay: 2s;
+
+}
+
+
+.leaf1_conteiner,.leaf2_conteiner,.leaf3_conteiner:hover {
+  background-color:aqua;
+} */
+
+
+
+
+
+/* #delay {
+  font-size: 20px;
+  transition-property: font-size;
+  transition-duration: 6s;
+  transition-delay: 2s;
+}
+
+#delay:hover {
+  font-size: 36px;
+}
+
+
+.leaf1_conteiner {
+  transition: <property> <duration> <timing-function> <delay>;
+} */
